@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   
   root to: 'home#index'
 
-  
+  resources :categories, only: %i[index new create edit update destroy] do
+    resources :expenses, only: %i[index new create edit update destroy]
+  end
 end
