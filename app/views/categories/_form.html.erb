@@ -1,0 +1,17 @@
+<%= form_with model: category, local: true do |form| %>
+    <div class="mb-4">
+      <%= form.label "Name"%>
+      <%= form.text_field :name, autocomplete: "name", placeholder: "Shoes"
+</div>
+    <div class="mb-4">
+      <%= form.label "Icon" %>
+      <%= form.text_field :icon, autocomplete: "name", placeholder: "Image URL"
+      %>
+    </div>
+    <div class="mb-4">
+      <%= form.submit "#{action_name == 'edit' ? 'Update' : 'Save'}"
+    </div>
+
+    <%= link_to "Back", categories_path,
+    %>
+<% end %>
