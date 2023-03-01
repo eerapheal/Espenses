@@ -1,0 +1,11 @@
+<div>
+  <div>
+    <% @categories.each do |category| %>
+     <%= render 'category', category: category %>      
+    <% end %>
+  </div>
+
+  <div>
+    <%= link_to "Add New Category", new_category_path %>
+  </div>
+</div>
