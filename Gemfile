@@ -70,6 +70,12 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-# Devise gem for authtentication
+
+# Authtentication Gem
 gem "devise"
+
+# mail helper for comformation
 gem "letter_opener", group: :development
+
+# Authorization Gem
+gem 'cancancan'
