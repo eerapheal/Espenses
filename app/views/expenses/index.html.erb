@@ -1,2 +1,16 @@
-<h1>Expenses#index</h1>
-<p>Find me in app/views/expenses/index.html.erb</p>
+<div>
+  <div>
+  <div>
+    <p><%= @category.name%> Expense</p>
+    <p><%=number_to_currency(@category.expenses.sum(:amount))%></p>
+  </div>
+  <% @expenses.each do |expense| %>
+    <div>
+      <%= render 'expenses', expense: expense %>
+    </div>
+  <% end %>
+   <%= link_to "Back To Category", categories_path %>
+   <div>
+    <%= link_to "Add a new Transaction", new_category_expense_path %>
+  </div>
+</div>
