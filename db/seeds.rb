@@ -4,4 +4,4 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-  User.create(name: "Luke", email: "me@gmail.com", passwoed: "power003")
+  User.create(name: "Luke Rechard", email: "me@gmail.com", password: "power003")

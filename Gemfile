@@ -79,3 +79,6 @@ gem "letter_opener", group: :development
 
 # Authorization Gem
 gem 'cancancan'
+
+gem 'tailwindcss-rails'
+
