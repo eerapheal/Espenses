@@ -1,7 +1,11 @@
-<div>
-  <h1 class="text-3xl font-bold mb-10">Expenses App</h1>
-  <div>
-    <%= link_to "Log In", user_session_path %>
-    <%= link_to "Sign Up", new_user_registration_path %>
+<div class="home flex flex-col items-center h-screen bg-gray-500">
+  <h1 class="font-bold mb-9 text-blue-500 mt-4 title">Expenses App</h1>
+  <div class="flex  justify-between">
+    <div>
+      <%= link_to "Log In", user_session_path, class:"log bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-5" %>
+    </div>
+    <div>
+      <%= link_to "Sign Up", new_user_registration_path, class:"bg-blue-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" %>
+    <div>
   </div>
 </div>

@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ .home {
+    background-color: aquamarine;
+    background-size: cover;
+    min-height: 100vh;
+ }
+
+ .title {
+    padding: 30px 0px 80px 0px;
+ }
+
+ .log {
+    margin-right: 20px;
+ }
