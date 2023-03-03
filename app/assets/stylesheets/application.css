@@ -14,16 +14,38 @@
  *= require_self
  */
 
- .home {
-    background-color: rgb(6, 192, 130);
-    background-size: cover;
+ main {
+    background-color: #f1f3f2; 
     min-height: 100vh;
  }
 
- .title {
+ nav {
+    background-color: #316aae;
+ }
+
+ .hanbuger {
+    color: #fff;
+ }
+
+/* .home {
+    background-color: #16a34a;
+    background-size: cover;
+    min-height: 100vh;
+ } */
+
+.title {
     padding: 30px 0px 80px 0px;
  }
 
  .log {
     margin-right: 20px;
+ }
+
+ .new-category {
+    margin: 15px;
+    padding: 13px;
+ }
+
+ .button-btn {
+    background-color: #60B625;
  }
