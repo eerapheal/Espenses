@@ -15,7 +15,7 @@
  */
 
  .home {
-    background-color: aquamarine;
+    background-color: rgb(6, 192, 130);
     background-size: cover;
     min-height: 100vh;
  }
