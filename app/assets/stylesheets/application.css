@@ -14,18 +14,20 @@
  *= require_self
  */
 
- main {
-    background-color: #f1f3f2; 
-    min-height: 100vh;
- }
+@import "tailwind.css";
 
- nav {
-    background-color: #316aae;
- }
+main {
+  background-color: #f1f3f2;
+  min-height: 100vh;
+}
 
- .hanbuger {
-    color: #fff;
- }
+nav {
+  background-color: #316aae;
+}
+
+.hanbuger {
+  color: #fff;
+}
 
 /* .home {
     background-color: #16a34a;
@@ -34,18 +36,18 @@
  } */
 
 .title {
-    padding: 30px 0px 80px 0px;
- }
+  padding: 30px 0 80px 0;
+}
 
- .log {
-    margin-right: 20px;
- }
+.log {
+  margin-right: 20px;
+}
 
- .new-category {
-    margin: 15px;
-    padding: 13px;
- }
+.new-category {
+  margin: 15px;
+  padding: 13px;
+}
 
- .button-btn {
-    background-color: #60B625;
- }
+.button-btn {
+  background-color: #60b625;
+}
