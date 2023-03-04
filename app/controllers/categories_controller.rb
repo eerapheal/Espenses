@@ -5,8 +5,7 @@ class CategoriesController < ApplicationController
     @categories = current_user.categories
   end
 
-  def edit
-  end
+  def edit; end
 
   def new
     @category = Category.new
