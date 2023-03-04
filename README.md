@@ -28,7 +28,7 @@
 
 The Expenses app keeps track of all your purchases organized in categories of your creation. It allows you to create new categories and create new expenses for each category. In order to use the app, a user must register.
 
-# Live Demo Application link
+### Live Demo Application link
 
 [Live Demo](https://espenses.onrender.com/)
 
