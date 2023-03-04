@@ -1,5 +1,5 @@
 class ExpensesController < ApplicationController
-   before_action :set_category, only: %i[index new edit create update destroy]
+  before_action :set_category, only: %i[index new edit create update destroy]
   before_action :set_expense, only: %i[edit update destroy]
   def index
     @expenses = @category.expenses.order(created_at: :desc)

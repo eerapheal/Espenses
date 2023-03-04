@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload", lint: false %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-  <header>
-      <title>Budget-App</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </header>
-   <% if signed_in? %>
+  <body class="h-screen">
+    <header>
+      <% if signed_in? %>
         <%= render "partials/header" %>
       <%end%>
     </header>
     <main class="container mx-auto flex flex-col">
       <% if notice.present? %>
         <div class="flex justify-center items-center bg-green-100 p-5 w-full  rounded">
-          <p class="leading-tight text-sm text-green-700 font-medium" ><%= notice%></p>
+          <p class="leading-tight text-sm text-green-700 font-medium flash-notice" ><%= notice%></p>
         </div>
       <% elsif alert.present? %>
         <div class="flex justify-center items-center bg-red-100 p-5 w-full rounded">
-          <p class="leading-tight text-sm text-red-700 font-medium" ><%= alert%></p>
+          <p class="leading-tight text-sm text-red-700 font-medium flash-notice" ><%= alert%></p>
         </div>
       <% end %>
       <%= yield %>
     </main>
+
+    <script>
+  // Hide the flash message after 3 seconds (3000 milliseconds)
+  setTimeout(function() {
+    $('#flash-notice').fadeOut('slow');
+  }, 1000);
+</script>
   </body>
 </html>

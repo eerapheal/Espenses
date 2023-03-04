@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+@import "tailwind.css";
+
+main {
+  background-color: #f1f3f2;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #316aae;
+}
+
+.hanbuger {
+  color: #fff;
+}
+
+/* .home {
+    background-color: #16a34a;
+    background-size: cover;
+    min-height: 100vh;
+ } */
+
+.title {
+  padding: 30px 0 80px 0;
+}
+
+.log {
+  margin-right: 20px;
+}
+
+.new-category {
+  margin: 15px;
+  padding: 13px;
+}
+
+.button-btn {
+  background-color: #60b625;
+}

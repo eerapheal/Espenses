@@ -11,6 +11,5 @@ class Ability
     can :manage, CategoryExpense do |category_expense|
       category_expense.category.user == current_user
     end
-    
   end
 end
