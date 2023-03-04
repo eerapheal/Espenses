@@ -74,10 +74,9 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 https://github.com/eerapheal/Espenses.git
 ```
-  cd my-folder
-  
+  Espenses
 ```
-recipe-app
+
 
 ### Istall
 install this project with:
