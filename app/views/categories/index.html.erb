@@ -1,0 +1,11 @@
+<div>
+  <div>
+    <% @categories.each do |category| %>
+     <%= render 'category', category: category %>      
+    <% end %>
+  </div>
+
+  <div  class="fixed button-btn bottom-0 left-0 right-0 py-3 flex flex-col items-center justify-center">
+    <%= link_to "Add New Category", new_category_path, class:"text-white border border-2 pt-2 pb-2 px-5 py-5 " %>
+  </div>
+</div>

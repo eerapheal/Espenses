@@ -1,0 +1,15 @@
+<div>
+  <div class="min-w-full">
+  <div class="flex flex-row justify-between mb-2 p-2 rounded-lg bg-white shadow-lg">
+    <p><%= @category.name%> Expenses</p>
+    <p><%=number_to_currency(@category.expenses.sum(:amount))%></p>
+  </div>
+  <% @expenses.each do |expense| %>
+    <div class="flex flex-col ">
+      <%= render 'expenses', expense: expense %>
+    </div>
+  <% end %>
+   <div class=" fixed button-btn bottom-0 left-0 right-0 py-3 flex flex-col items-center justify-center">
+    <%= link_to "Add a new Transaction", new_category_expense_path, class:"text-white border border-3xl pt-2 pb-2 px-5 py-5  " %>
+  </div>
+</div>
