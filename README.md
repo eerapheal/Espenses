@@ -28,6 +28,10 @@
 
 The Expenses app keeps track of all your purchases organized in categories of your creation. It allows you to create new categories and create new expenses for each category. In order to use the app, a user must register.
 
+## Project presentation link
+
+[Presentation of APP](https://drive.google.com/drive/u/0/my-drive)
+
 # Live Demo Application link
 
 [Live Demo](https://espenses.onrender.com/)
