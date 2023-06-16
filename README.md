@@ -30,7 +30,7 @@ The Expenses app keeps track of all your purchases organized in categories of yo
 
 ## Project presentation link
 
-[Presentation of APP](https://drive.google.com/drive/u/0/my-drive)
+[Presentation of APP](/)
 
 # Live Demo Application link
 
